@@ -108,9 +108,18 @@ output:
   - platform: esp8266_pwm
     pin: GPIO4
     id: output_cold
+    frequency: 1000 Hz
+    min_power: 0.05
+    max_power: 0.75 
+    zero_means_zero: true
+
   - platform: esp8266_pwm
     pin: GPIO5
     id: output_warm
+    frequency: 1000 Hz
+    min_power: 0.05
+    max_power: 0.75 
+    zero_means_zero: true
 
 light:
   - platform: cwww
